@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" type="text/css" href="register.css">
+    
+  </head>
+  <body >
+   <div class="top">
+     <div class="log-container" id="log_container">
+       <div class="wrapper">
+         <h1>Create an account</h1>
+         <div class="form__message form__message--error"></div>
+         
+          <form class="createAccount" id="createAccount" method="post" name="form" >
+            <div class="form__input-group"></div>
+            <div class="input-group"> 
+            <label for="">Username</label>
+            <span></span>
+            <input type="text" id="signupUsername" class="input" name="username" required placeholder="Enter a username..." autocomplete="off">
+            <div class="form__input-error-message"></div>
+            <span class="error-message"></span>
+           </div>
+           <br>
+
+           <div class="form__input-group"></div>
+           <div class="input-group">
+           <label for="">Email address</label>
+            <span></span>
+            <input type="text" class="form__input input" id="email" name="username" required placeholder="Enter your email address..." autocomplete="off">
+            <div class="form__input-error-message"></div>
+            <span class="error-message"></span>
+           </div>
+           <br>
+
+           <div class="form__input-group"></div>
+           <div class="input-group">
+            <label for="">Password</label> 
+            <span></span>
+            <input type="password" class="form__input input" id="password"  name="password" required placeholder="Enter your password...">
+            <div class="form__input-error-message"></div>
+            <div id="message">
+              <h3>Password must contain the following:</h3>
+              <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+              <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+              <p id="number" class="invalid">A <b>number</b></p>
+              <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+            </div>
+            <span class="error-message"></span>
+           </div>
+           <br>
+
+           <div class="form__input-group">
+           <div class="input-group">
+            <label for="">Confirm Password</label> 
+            <span></span>
+            <input type="password" class="form__input input" id="confirmPassword" name="password" required placeholder="Enter your password again...">
+            <div class="form__input-error-message"></div>
+            
+            <span class="error-message"></span>
+            </div>
+           
+            <br>
+             <button type="submit" onclick="UserRegister()" class="btn" id="btn" style="color: white;">Sign Up</button>
+            </form>
+             <div class="signup">
+               <p style="color: grey; text-align: center;">Already a member? 
+                 <a id="signup" href="index.html" style="color: grey; text-decoration: underline;">Sign in now</a></p>
+            </div>
+           <br></br>
+           
+              
+           </div>
+
+       </div>
+
+     </div>
+   </div>
+   
+   <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script defer src="register.js"></script>
+
+
+
+
+
+  </body>
+</html>
+
+

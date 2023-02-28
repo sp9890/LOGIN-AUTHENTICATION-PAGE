@@ -1,0 +1,134 @@
+html {
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+body{ 
+    padding: 0;
+    margin: 0;
+    background: #8a2be2;
+    width: 100%;
+    font-family: sans-serif;
+    text-align: center;
+    justify-content: center;
+    color: black;
+    height: 100vh;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  html, body {
+    margin: 0;
+    padding: 0px;
+}
+  label{
+      float: left;
+  }
+  ::placeholder{
+    padding-left: 10px;
+  }
+  
+  input:focus{
+    outline: none;
+    padding-left: 10px;
+  }
+  a{
+    text-decoration: none;
+  }
+  .log-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 450px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 5px;
+  }
+  
+  h1{
+    padding: 10px;
+    color:black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input{
+    background: #d4d4d3;
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    margin: 0px;
+    color: black;
+    border-radius: 4px;
+  }
+  
+  .btn{
+    width: 100%;
+    font-size: 20px;
+    margin: 10px auto;
+    padding: 10px 8px 10px 8px;
+    border: none;
+    background-color: black;
+    color: white; 
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .btn:hover {
+    filter: brightness(110%);
+  }
+  span{
+    vertical-align: text-top;
+  }
+  
+  .form__input-error-message {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: red;
+}
+  
+.form__input--error {
+  color: var(--color-error);
+  border-color: red;
+}
+.error-message {
+  font-size: 0.85rem;
+  color: red;
+}
+
+#message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 0px 0px;
+  font-size: 10px;
+}
+#message p {
+  padding: 10px 35px;
+  font-size: 10px;
+  margin: -10px;
+}
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  
+}
+
+/* Add a red text color and an "x" icon when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  
+}

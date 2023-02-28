@@ -1,0 +1,127 @@
+
+body { 
+    padding: 0px;
+    margin: 0;
+    background: #8a2be2;
+    background-size: contain;
+    width: 100%;
+    font-family: sans-serif;
+    height: 100vh !important;
+    max-height: 100vh;
+    padding-top: 40px;
+    overflow: hidden;
+  }
+  
+  input:focus{
+    outline: none;
+    padding-left: 10px;
+  }
+ 
+  ::placeholder{
+    padding-left: 10px;
+    
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  .log-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 450px;
+    margin: 0px auto 0px auto;
+    background: white;
+    border-radius: 5px;
+    
+  }
+  h1{
+    padding: 10px;
+    color:black;
+    text-align: center;
+    display: flex;
+  flex-direction: column;
+  
+  }
+  input{
+    display: flex;
+    width: 90%;
+    
+  }
+  input{
+  background: #d4d4d3;
+  width: 100%;
+  height: 30px;
+  padding: 0px 0px 0px 0px;
+  outline: none;
+  border: none;
+  margin: 0px;
+  color: black;
+  border-radius: 4px;
+  }
+  
+  .btn{
+    width: 250px;
+    font-size: 20px;
+    margin: 10px auto;
+    padding: 10px 8px 10px 8px;
+    border: none;
+    background-color: black;
+    color: white; 
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .btn:hover {
+    filter: brightness(110%);
+  }
+  
+  
+  .g-signin2{
+    width: 100px;
+    margin: auto;
+    padding: 0px;
+    font-family: fantasy;
+  }
+  .flex{
+    display: flex;
+  }
+  span{
+    vertical-align: text-top;
+    
+  }
+  
+  .check{
+    display: flex;
+  float: left;
+  font-size: 14px;
+  
+  
+  }
+  
+  input[type=checkbox] {
+    accent-color: black;
+  }
+  .error-message {
+    font-size: 0.85rem;
+    color: red;
+  }
+  .input.input-error {
+    border: 1px solid red;
+  }
+  
+  .input.input-error:focus {
+    border: 1px solid red;
+  }
+  .form__message {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: red;
+}
+.form__message--success {
+  color: var(--color-success);
+}
+
+.form__message--error {
+  color: var(--color-error);
+}
